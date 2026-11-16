@@ -1,0 +1,5 @@
+# dsh-context-refiner —— profile bundle 装配层
+# 浏览器侧注册输入框下方的「提炼」按钮；宿主侧 index.js 注册 /dsh-context-refiner/state 与 /reset 两个本地 HTTP 路由。
+- insert:
+    - id: dsh-context-refiner
+      name: dsh-context-refiner

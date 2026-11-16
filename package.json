@@ -1,0 +1,52 @@
+{
+  "name": "dsh-context-refiner",
+  "version": "0.1.4",
+  "description": "四档上下文提炼 + 极致离线重置（两步预览；依附 billion-context 的三档模型压缩）",
+  "license": "AGPL-3.0-or-later",
+  "author": "china-cdw",
+  "homepage": "https://github.com/china-cdw/dsh-context-refiner#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/china-cdw/dsh-context-refiner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/china-cdw/dsh-context-refiner/issues"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/test.mjs && node scripts/test-host.mjs && node scripts/test-routes.mjs",
+    "test:host": "node scripts/test-host.mjs",
+    "test:routes": "node scripts/test-routes.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "files": [
+    "client.js",
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "host/",
+    "scripts/"
+  ]
+}

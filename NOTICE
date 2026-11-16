@@ -1,0 +1,13 @@
+dsh-context-refiner — 许可声明 / License notice
+==========================================================================
+
+本项目以 GNU Affero General Public License v3.0 或更新版本（AGPL-3.0-or-later）
+发布，另提供商业授权（申请方式见 README「许可证」）。AGPL 完整原文见 LICENSE。
+
+This project is distributed under the GNU Affero General Public License v3.0
+or later (AGPL-3.0-or-later), with a commercial license available (see
+"License" in README). The full AGPL text is in LICENSE.
+
+本项目不含上游 MIT 代码；它调用 billion-context 的公开接口，但不复制其源码。
+This project contains no upstream MIT-licensed code; it talks to billion-context
+through its public interface without copying its source.
